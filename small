@@ -282,6 +282,69 @@ int main() {
     return 0;
 }
 ----------------------------------------------------------------------
+CONCATINATE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string str1, str2, result;
+
+    cout << "Enter first string: ";
+    getline(cin, str1);   // input with spaces
+    cout << "Enter second string: ";
+    getline(cin, str2);
+
+    // Method 1: Using '+' operator
+    result = str1 + str2;
+    cout << "\nConcatenated using + operator: " << result << endl;
+
+    // Method 2: Using append() function
+    string result2 = str1;
+    result2.append(str2);
+    cout << "Concatenated using append(): " << result2 << endl;
+
+    return 0;
+}
+----------------------------------------------------------------------
+AREA:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float radius, area;
+    const float PI = 3.14159;
+
+    cout << "Enter radius of circle: ";
+    cin >> radius;
+
+    area = PI * radius * radius;
+
+    cout << "Area of circle = " << area << endl;
+
+    return 0;
+}
+
+----------------------------------------------------------------------
+Square:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, square;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    square = n * n;
+
+    cout << "Square of " << n << " is " << square << endl;
+
+    return 0;
+}
+
+----------------------------------------------------------------------
+
 VEHICLE MANAGMENT:
 #include <iostream>
 #include <string>
